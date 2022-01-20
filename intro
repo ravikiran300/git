@@ -11,4 +11,11 @@ git init(on empty directory)
 git objects(it stores the  hash values(objects)
 git uses key value data store
 
+git add (go to stashed)
+git commit ( it will commit file)
+if we modify the file it goes from commit to modifed
+
+two types of files tracked and untracked files
+
+
 
