@@ -1,1 +1,14 @@
 
+git is like which tracks  changes content in files
+
+restority. files and folder stored in one place. if any changes it tracks
+
+git is like making changes only locally,no internet needed
+github is like repostritory hosting service,to take backup of your files. mainly used distrubuted teams.
+
+git init(on empty directory)
+
+git objects(it stores the  hash values(objects)
+git uses key value data store
+
+
