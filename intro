@@ -64,11 +64,6 @@ if no conflct merge is forward forward merge
 
 ============================
 
-Threeway merga and fast forword merge
-common merge conflits
-git pull and fetch
-
-
 ===========================
 
 git branches and merges
@@ -87,6 +82,15 @@ git checkout -D feauture1
 testing merge
 
 create feautue branch and commit a file
+
+===================================
+
+
+Threeway merge and fast forword merge
+common merge conflits
+git pull and fetch
+git rebase
+
 
 
 
