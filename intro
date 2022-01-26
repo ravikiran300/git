@@ -32,6 +32,24 @@ git checkout .(delete content one by one)
 
 git  --hard commitid 
 
+===========================================
+
+create files and commit
+
+git remote add origin urlofprojct
+
+git push origin master
+
+git pull origin master
+
+to avoid typing git pull origin master
+
+we can set upstream
+
+git branch --set-upstream-to=origin/master
+
+now u can ( git pull ) directly
+
 
 
 
