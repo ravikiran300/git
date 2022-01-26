@@ -13,6 +13,13 @@ git uses key value data store
 
 git log --oneline
 git show commitid
+git checkout commitid(to commitid how project is?)
+
+
+revert:
+undo the changes
+
+git revert commitid
 
 
 
