@@ -41,6 +41,7 @@ git remote add origin urlofprojct
 git push origin master
 
 git pull origin master
+git push origin master
 
 to avoid typing git pull origin master
 
@@ -49,6 +50,44 @@ we can set upstream
 git branch --set-upstream-to=origin/master
 
 now u can ( git pull ) directly
+
+git commit -am "message"
+adding and commited modified old files(work only on old files)
+
+
+go to master and merge it
+git merge branchname
+
+
+if no conflct merge is forward forward merge
+
+
+============================
+
+Threeway merga and fast forword merge
+common merge conflits
+git pull and fetch
+
+
+===========================
+
+git branches and merges
+========
+git branch
+git branch features1
+git checkout feauture1
+git log --oneline 
+
+create branch and checkout to branch
+git checkout -b feature2
+
+git checkout -D feauture1
+
+
+testing merge
+
+create feautue branch and commit a file
+
 
 
 
