@@ -11,4 +11,8 @@ git init(on empty directory)
 git objects(it stores the  hash values(objects)
 git uses key value data store
 
+git log --oneline
+git show commitid
+
+
 
