@@ -21,5 +21,22 @@ undo the changes
 
 git revert commitid
 
+git reset(soft,hard,mixed)
+default(mixed)
+git reset --mixed pervious commitid(it comes to unstaged env,content wont delete)
+git checkout . (it will clear the content)
+
+git reset --soft previous commitid                    (come to staged,content wont delete
+git checkout . (comes to unstaged)
+git checkout .(delete content one by one)
+
+git  --hard commitid 
+
+
+
+
+
+
+
 
 
