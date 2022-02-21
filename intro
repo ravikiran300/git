@@ -62,11 +62,24 @@ Rebase
  git push origin main
  next type username and password
  
+ https://medium.com/@mshalam04/how-to-resolve-merge-conflicts-in-github-f4d9d0da403d
+ https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80
+ https://levelup.gitconnected.com/learn-github-pr-merge-conflicts-in-seconds-bf301232d0cf
+ 
  ===========================================================================================
  
  
- 
- 
+git pull and fetch
+===================
+
+https://medium.com/@knoldus/features-of-git-fetch-and-git-pull-command-4ba787ec9a30
+
+=================================================================================================
+
+git-fast-forward-merge-vs-three-way-merge
+=============================================
+
+https://medium.com/@koteswar.meesala/git-fast-forward-merge-vs-three-way-merge-8591434dd350 
  
  
  
@@ -154,10 +167,8 @@ create feautue branch and commit a file
 ===================================
 
 
-Threeway merge and fast forword merge
-common merge conflits
-git pull and fetch
-git rebase
+
+
 
 
 
