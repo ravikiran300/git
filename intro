@@ -11,9 +11,52 @@ git init(on empty directory)
 git objects(it stores the  hash values(objects)
 git uses key value data store
 
+============================================================================
+git merge
+-----------
+
+create a file a master and feauture branch.
+merge it to feature branch
+
+create a file a master and feauture branch.
+rebase from feature to master branch.
+
+https://www.youtube.com/watch?v=KWAZl2QHC44
+
+
+git merge
+- Is a non-destructive operation
+- Existing branches are not changed in any way
+- Creates a new merge commit in the feature branch
+
+git rebase
+- Moves the entire feature branch to begin on the tip of the master branch
+- Re-writes the project history
+- We get much cleaner and linear project history
+
+=========================================================================================
+
+ GitHub Merge and Merge conflicts 
+ ====================================
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ==========================================================
+
+
+
 git log --oneline
 git show commitid
 git checkout commitid(to commitid how project is?)
+
+
+i have master branch i did base commmint 
 
 
 revert:
