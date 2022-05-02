@@ -35,13 +35,15 @@ Normally git pull does this by doing a git fetch to bring the local copy of the 
 and then merging the changes into your own code repository and possibly your working copy.
 In the simplest terms, git pull does a git fetch followed by a git merge.
 
+https://www.w3schools.com/git/git_exercises.asp?remote=github
 
 examples:
 https://www.w3schools.com/git/git_pull_from_remote.asp?remote=github
 
 ===========================================================================================
-
-git branch
+Branches
+Note: branch -r is for remote branches only.
+ So we can use the -a option to see all local and remote branches:
 
 
 
