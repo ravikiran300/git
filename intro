@@ -11,6 +11,40 @@ git init(on empty directory)
 git objects(it stores the  hash values(objects)
 git uses key value data store
 
+
+===========================================================================================
+
+git push,fech,clone
+
+git clone <repo?
+git pull origin master
+git add/remote files
+git add .
+git commit -m "your message"
+git push origin master
+
+#delete some files/folder and git pull again contnet is not updated
+
+
+git fetch is the command that says "bring my local copy of the remote repository up to date."
+This also downloads all of the required commits and files from the other repository.
+
+git pull says "bring the changes in the remote repository to where I keep my own code."
+
+Normally git pull does this by doing a git fetch to bring the local copy of the remote repository up to date, 
+and then merging the changes into your own code repository and possibly your working copy.
+In the simplest terms, git pull does a git fetch followed by a git merge.
+
+
+examples:
+https://www.w3schools.com/git/git_pull_from_remote.asp?remote=github
+
+===========================================================================================
+
+git branch
+
+
+
 …or create a new repository on the command line
 
 
