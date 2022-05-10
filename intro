@@ -14,6 +14,14 @@ git uses key value data store
 
 ===========================================================================================
 
+33. What is merge conflict in GIT?
+A merge conflict in GIT is the result of merging two commits.
+Sometimes the commit to be merged and current commit have changes in same location. In this
+scenario, GIT is not able to decide which change is more important. Due to this GIT reports a merge
+conflict. It means merge is not successful. We may have to manually check and resolve the merge
+conflict.
+
+
 git push,fech,clone
 
 git clone <repo?
