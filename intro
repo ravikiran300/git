@@ -92,6 +92,7 @@ git merge
 - Creates a new merge commit in the feature branch
 
 git rebase
+Rebasing is the process of moving a branch to a new base commit.
 - Moves the entire feature branch to begin on the tip of the master branch
 - Re-writes the project history
 - We get much cleaner and linear project history
