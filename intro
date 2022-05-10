@@ -151,6 +151,13 @@ https://medium.com/@paritosh90/git-internals-merge-2fe923d0c0c6
  
  
  ==========================================================
+ 
+ 
+ 42. What is the main difference between git clone and git remote?
+The main difference between git clone and git remote is that git clone is used to create a new local
+repository whereas git remote is used in an existing repository.
+git remote adds a new reference to existing remote repository for tracking further changes.
+git clone creates a new local repository by copying another repository from a URL.
 
 
 
