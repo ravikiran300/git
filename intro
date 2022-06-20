@@ -88,6 +88,14 @@ rebase from feature to master branch.
 
 https://www.youtube.com/watch?v=KWAZl2QHC44
 
+https://www.geeksforgeeks.org/git-difference-between-merging-and-rebasing/
+
+git merge
+Git merge is a command that allows you to merge branches from Git. Git rebase is a command that allows developers to integrate changes from one branch to another
+All the commits on the feature branch will be combined as a single commit in the master branch.
+
+git Rebase
+All the commits will be rebased and the same number of commits will be added to the master branch.
 
 git merge
 - Is a non-destructive operation
@@ -240,18 +248,3 @@ testing merge
 create feautue branch and commit a file
 
 ===================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
