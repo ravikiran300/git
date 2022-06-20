@@ -11,6 +11,8 @@ git init(on empty directory)
 git objects(it stores the  hash values(objects)
 git uses key value data store
 
+Ans. "git init" creates an empty repository or can make an existing directory a git repository while
+"git clone" first internally calls "git init" to create an empty git repository and then copy the data from the specified remote repository
 
 ===========================================================================================
 
@@ -34,8 +36,9 @@ git push origin master
 #delete some files/folder and git pull again contnet is not updated
 
 
-git fetch is the command that says "bring my local copy of the remote repository up to date."
-This also downloads all of the required commits and files from the other repository.
+
+git fetch is the command that tells your local git to retrieve the latest meta-data info from the original 
+(yet doesn't do any file transferring. It's more like just checking to see if there are any changes available
 
 git pull says "bring the changes in the remote repository to where I keep my own code."
 
