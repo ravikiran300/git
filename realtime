@@ -1,0 +1,145 @@
+https://jira-tech.amobee.com/browse/NOC-4769
+switch to master branch
+git pull
+create a branch through UI
+git checkout personal/rravada/xxxx
+git pull origin release/220601
+save the file
+git status
+git push origin personal/rravada/xxxx
+
+https://bitbucket.amobee.com/projects/TURN/repos/turn/pull-requests/56925/overview
+https://bitbucket.amobee.com/projects/TURN/repos/turn/pull-requests/56924/diff#coverageReport.txt
+
+
+#!/bin/sh
+
+deploy_app1904(){
+
+        echo "kill console-next-atl-dev" | ol-client
+                sleep 60
+#                echo "install $build_number 0" | ol-client
+                echo "install $build_number 1" | ol-client
+                sleep 60
+                echo "activate console-next-atl-dev $build_number " | ol-client
+                sleep 50
+                echo "start console-next-atl-dev" | ol-client
+
+}
+
+download(){
+        cd $build_dir
+                if [ -f *.gz ] ; then
+
+                        rm -rf *.bkp
+                                mv *.gz turn-$build_number.tar.gz.bkp
+
+                                wget --auth-no-challenge --user=$user --ask-password $build_url
+#eploy
+#v *.gz turn-$2.tar.gz.bkp
+                else
+
+                        echo "Hey! Original tarball missing Something gone nasty"
+                                exit 1
+                                fi
+
+}
+
+deploy_app1912(){
+
+        echo "kill console-atl-dev1" | ol-client
+                echo "kill transcode-atl-dev" | ol-client
+                sleep 60
+                echo "install $build_number 1" | ol-client
+                sleep 60
+                echo "activate console-atl-dev1 $build_number " | ol-client
+                echo "activate transcode-atl-dev $build_number " | ol-client
+                sleep 50
+                echo "start console-atl-dev1" | ol-client
+                echo "start transcode-atl-dev" | ol-client
+
+}
+
+deploy_app1913(){
+
+        echo "kill console-atl-dev2" | ol-client
+                echo "kill powercluster-atl-dev" | ol-client
+                sleep 60
+                echo "install $build_number 1" | ol-client
+                sleep 60
+                echo "activate console-atl-dev2 $build_number " | ol-client
+                echo "activate powercluster-atl-dev $build_number " | ol-client
+                sleep 50
+                echo "start console-atl-dev2" | ol-client
+                echo "start powercluster-atl-dev" | ol-client
+
+}
+
+
+
+#set -ex
+
+build_dir=/server/turn/deploy/tarballs
+user=$1
+build_number=$2
+build_url=$3
+
+
+download(){
+        cd $build_dir
+                if [ -f *.gz ] ; then
+
+                        rm -rf *.bkp
+                                mv *.gz turn-$build_number.tar.gz.bkp
+
+                                wget --auth-no-challenge --user=$user --ask-password $build_url
+#eploy
+#v *.gz turn-$2.tar.gz.bkp
+                else
+                        echo "original tarball missing Something gone nasty"
+                                exit
+                                fi
+
+}
+
+
+if [ $# -lt 3 ]; then
+
+echo "
+
+Syntax:   $0 USERNAME  BUILDNUMBER URL
+
+Example:  $0 rravada 220618 https://ci02.turn.com/job/turn-rc-gradle/***/artifact/turn/build/release/turn-****.gz"
+
+exit 1
+
+fi
+
+
+
+read -p "mention server eg: app1912 or app1904 or app1913 :  "    server
+#echo $server
+if [ $server == "app1904" ] ; then
+
+download
+deploy_app1904
+
+fi
+
+
+
+#echo $server
+if [ $server == "app1912" ] ; then
+
+download
+deploy_app1912
+
+fi
+
+#echo $server
+if [ $server == "app1913" ] ; then
+download
+deploy_app1913
+
+fi
+     
