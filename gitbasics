@@ -1,4 +1,6 @@
-# Undo the last commit and keep the changes in the working directory
+#git log --oneline
+
+Undo the last commit and keep the changes in the working directory
 git reset --soft HEAD~1
 
 # Undo the last commit and discard the changes
@@ -6,6 +8,21 @@ git reset --hard HEAD~1
 
 # Force push to update the remote branch (not recommended)
 git push --force origin main
+
+git revert <commit>
+
+Commit History:
+
+git revert: Preserves the commit history by adding a new commit.
+git reset: Rewrites the commit history by moving the branch pointer.
+Safety for Shared Repositories:
+
+git revert: Safe for shared repositories since it doesn't alter existing commits.
+git reset: Not safe for shared repositories if commits have already been pushed, as it can cause conflicts for other collaborators.
+Scope of Changes:
+
+git revert: Only affects the specified commit.
+git reset: Can affect multiple commits depending on how far back the reset goes.
 
 
 merging in git
